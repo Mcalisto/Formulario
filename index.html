@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formulario Padrão</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <style media="screen">
+  .hide {
+    display: none;
+  }
+  </style>
+</head>
+<body>
+  <ul id="erros">
+
+  </ul>
+  <form id="FormJSON" class="" action="" method="">
+    <p><label id="Nome" for="Nome">Nome</label></p>
+    <input type="text" name="Nome" value="" placeholder="Digite seu nome">
+
+  <p><label for="Telefone">Telefone</label></p>
+    <input id="Telefone" type="text" name="Telefone" value="" placeholder="Digite um telefone">
+
+    <p><label for="Conheceu"> Como nos conheceu?</label></p>
+    <select id="Conhece" class="" name="Conheceu">
+      <option value="TV"> TV</option>
+      <option value="Internet">Internet</option>Teste
+      <option value="Outros">Outros</option>
+    </select>
+
+    <p id="a"><label for="prs">Possui rede social?</label></p>
+    <input type="radio" name="PRS" value="" id="prss" onclick="showDiv()">
+    <label for="prs">Sim</label>
+    <input type="radio" name="PRS" value="" id="prsn" onclick="showDiv2()">
+    <label for="prs">Nao</label>
+
+    <div id="radioDiv" class="hide">
+      <p><label for="RedeSocial">Quais:</label></p>
+      <div class="row">
+        <input id="Facebook"type="checkbox" name="RedeSocial" value="Facebook" >
+        <label id="Face" for="Facebook">Facebook</label>
+
+        <input id="Instagram" type="checkbox" name="RedeSocial" value="Instagram">
+        <label id="Insta" for="Instagram">Instagram</label>
+
+        <input id="Linkedin" type="checkbox" name="RedeSocial" value="Linkedin">
+        <label id="Link" for="Instagram">Linkedin</label>
+      </div>
+    </div>
+    <br>
+    <br>
+    <input id="Enviar" type="submit" name="enviar" value="Enviar">
+  </form>
+  <body>
+
+  <script src="JavaScript/Functions.js"></script>
+</body>
+</html>
